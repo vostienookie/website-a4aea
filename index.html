@@ -1,0 +1,166 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sushi Restaurant</title>
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header {
+  background-color: #663399; /* Purple */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+
+.about-us {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-us img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu-item h3 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  min-height: 15vh;
+  position: relative; /* Needed for absolute positioning of contact info */
+}
+
+
+.contact-info {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Sushi Restaurant</h1>
+</header>
+
+<div class="container">
+  <section class="about-us">
+    <img src="https://res.cloudinary.com/dseiakb3q/image/upload/v1732968953/sswutykcs7un137uavwa.jpg" alt="Sushi Restaurant">
+    <div>
+      <h2>Fresh Japanese Cuisine in Kenya</h2>
+      <p>Experience the art of authentic Japanese sushi prepared by our experienced chefs using the freshest ingredients.  We offer a wide variety of rolls, nigiri, and sashimi, crafted with passion and precision. Indulge in the exquisite flavors and textures of our carefully curated menu. From classic favorites to innovative creations, we cater to every palate.</p>
+      <p> Our commitment to quality and exceptional service ensures an unforgettable dining experience.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Our Menu</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <h3>Salmon Avocado Roll</h3>
+        <p>Fresh salmon and creamy avocado, a classic combination.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Spicy Tuna Roll</h3>
+        <p>A flavorful roll with a kick.</p>
+      </div>
+      <div class="menu-item">
+          <h3>California Roll</h3>
+          <p>A timeless favorite with crab, avocado, and cucumber.</p>
+      </div>
+      </div>
+      <p>View our full menu online or visit us to explore our daily specials.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Visit Us</h2>
+    <p>We are located in the heart of Nairobi, offering a welcoming atmosphere and exceptional service.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Call to Action</h2>
+    <p>Ready to experience the best sushi in Kenya? Book your table today!</p> <a href="tel:+25411238600">Call us!</a>
+  </section>
+</div>
+
+<footer>
+  <div class="contact-info">
+    <p>25411238600</p>
+    <p>Nairobi, Kenya</p>
+    <p>sushi@mail.con</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
